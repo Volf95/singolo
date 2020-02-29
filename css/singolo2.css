@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: 'latoregular', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: 'latoregular';
+  font-size: 12px;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+/* ============================= PORTFOLIO ==================================*/
+.portfolio {
+  padding: 64px 40px 67px;
+  background-color: #2d303a;
+  border-bottom: 6px solid #323746;
+}
+
+.portfolio_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio_title {
+  margin-bottom: 28px;
+  font-family: 'latoblack', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30.2975px;
+  letter-spacing: -0.1px;
+  color: #666d89;
+}
+
+.portfolio_subtitle {
+  margin-bottom: 15px;
+  font-family: 'latolight', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18.8335px;
+  letter-spacing: -0.28px;
+  color: #767e9e;
+}
+
+
+/* ======= BUTTONS ======= */
+.button_group {
+  margin-bottom: 19px;
+}
+
+.button_group .btn:last-child {
+  margin-right: 0px;
+}
+
+.btn {
+  margin: 0px 8px 0px 0px;
+  border: 1px solid #767e9e;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: 'latoregular', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 12.8985px;
+  text-align: justify;
+  color: #767e9e;
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #dedede;
+  border-color: #dedede;
+}
+
+.btn_all {
+  padding: 4px 7px 4px;
+}
+
+.btn_web_design,
+.btn_graphic_design,
+.btn_artwork {
+  padding: 4px 5px;
+}
+/* ======= / BUTTONS ======= */
+
+.portfolio_items {
+  height: 601px;
+  overflow: hidden;
+}
+
+.portfolio_items .portfolio_block:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio_block {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.portfolio_block .img_position:last-child {
+  margin: 0;
+}
+
+/* =============== IMAGES POSITION ================*/
+
+.img_position {
+  height: 187px;
+  width: 220px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.portfolio_img{
+  position: relative;
+}
+
+/* === FIRST BLOCK ===*/
+.project_boat {
+  right: 8px;
+  bottom: 11px;
+}
+
+.project_fly {
+  right: 82px;
+  bottom: 43px;
+}
+
+.project_space {
+  right: 11px;
+  bottom: 1px;
+}
+
+.project_robo {
+  right: 24px;
+  bottom: 2px;
+}
+
+/* === SECOND BLOCK ===*/
+.project_abstraction {
+  right: 10px;
+  bottom: 16px;
+}
+
+.project_it {
+  right: 16px;
+  bottom: 4px;
+}
+
+.project_art {
+  right: 31px;
+  bottom: 39px;
+}
+
+.project_hen {
+  right: 24px;
+  bottom: 32px;
+}
+
+/* === THIRD BLOCK ===*/
+.project_hulk {
+  right: 16px;
+  bottom: 2px;
+}
+
+.project_radio {
+  right: 141px;
+  bottom: 113px;
+}
+
+.project_horror {
+  right: 144px;
+  bottom: 175px;
+}
+
+.project_blood {
+  right: 36px;
+  bottom: 60px;
+}
+
+
+/* ================================== ABOUT US ================================== */
+.about_us {
+  display: block;
+  padding: 63px 40px 67px;
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #fff;
+}
+
+
+.about_us_content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.about_us_title {
+  margin-bottom: 22px;
+  font-family: 'latoblack', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30.2975px;
+  letter-spacing: -0.1px;
+  color: #666d89;
+}
+
+.about_us_subtitle {
+  margin-bottom: 15px;
+  text-align: justify;
+  font-family: 'latolight', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.28px;
+  color: #767e9e;
+}
+
+.our_specialists {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.our_specialists .specialist:first-child {
+  margin-right: 19px;
+}
+
+.our_specialists .specialist:nth-child(2) {
+  margin-right: 21px;
+}
+
+.specialist_photo {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 17px;
+  overflow: hidden;
+}
+
+.specialist_name {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+  font-family: 'latoblack', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18.496px;
+  letter-spacing: -0.18px;
+  color: #666d89;
+}
+
+.specialist_info {
+  margin-bottom: 24px;
+  text-align: justify;
+  line-height: 21.56px;
+  letter-spacing: -0.1px;
+  color: #767e9e;
+}
+.our_specialists .specialist:first-child .specialist_info{
+  letter-spacing: -0.165px;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials_link {
+  margin-right: 8px;
+}
+
+.socials .socials_link:last-child {
+  margin-right: 0px;
+}
+
+.socials_ico  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #666d89;
+  border-radius: 50%;
+}
+
