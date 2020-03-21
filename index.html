@@ -12,49 +12,85 @@
 
 <body>
   <div class="container">
-    <header>
-      <div class="sg_header">
-        <a class="sg_logo" href="/" title="Singolo">
-          <h1>Singolo</h1>
-          <span>*</span>
-        </a>
-        <!-- /.sg_logo -->
-        <div class="sg_navbar">
-          <nav class="navbar">
-            <ul class="menu_list">
-              <li class="menu_item"><a href="#">Home</a></li>
-              <li class="menu_item"><a href="#">Services</a></li>
-              <li class="menu_item"><a href="#">Portfolio</a></li>
-              <li class="menu_item"><a href="#">About</a></li>
-              <li class="menu_item"><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-          <!-- /.navbar -->
+    <header class="header">
+      <div class="header_pos">
+        <div class="sg_header">
+          <a class="sg_logo" href="/" title="Singolo">
+            <h1>Singolo</h1>
+            <span>*</span>
+          </a>
+          <!-- /.sg_logo -->
+          <div class="sg_navbar">
+            <nav class="navbar">
+              <ul class="menu_list">
+                <li class="menu_item"><a class="menu_link" href="#home">Home</a></li>
+                <li class="menu_item"><a class="menu_link" href="#services">Services</a></li>
+                <li class="menu_item"><a class="menu_link" href="#portfolio">Portfolio</a></li>
+                <li class="menu_item"><a class="menu_link" href="#about">About</a></li>
+                <li class="menu_item"><a class="menu_link" href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- /.navbar -->
+          </div>
+          <!-- /.sg_navbar -->
         </div>
-        <!-- /.sg_navbar -->
+        <!-- /.sg_header -->
       </div>
-      <!-- /.sg_header -->
     </header>
     <!-- /.HEADER -->
-    
+
     <main>
-      <section class="slider">
-        <button type="button" class="prev_arrow"></button>
-        <!-- /.prev_arrow -->
-        <div class="vertical_phone">
-          <img src="assets/img/iphone_vertical.png" alt="iPhone">
+      <section class="slider_section">
+        <a href="#" class="anchor_link" name="home"></a>
+        <div class="slider_content">
+          <button type="button" class="prev_arrow"></button>
+          <!-- /.prev_arrow -->
+
+          <div class="sliders">
+            <div class="slider_item first_slide">
+              <div class="vertical_phone">
+                <img src="assets/img/iphone_vertical.png" alt="Iphone">
+                <span class="vertical_home_btn"></span>
+                <span class="vertical_display"></span>
+              </div>
+              <!-- /.vertical_phone -->
+              <div class="horizontal_phone">
+                <img src="assets/img/iphone_horizontal.png" alt="Iphone">
+                <span class="horizontal_home_btn"></span>
+                <span class="horizontal_display"></span>
+              </div>
+              <!-- /.horizontal_phone -->
+            </div>
+            <!-- /.first_slide -->
+            <div class="slider_item second_slide" style="display: none;">
+              <div class="left_phone">
+                <img src="assets/img/left_phone.png" alt="Iphone">
+              </div>
+              <!-- /.left_phone -->
+              <div class="center_phone">
+                <img src="assets/img/center_phone.png" alt="Iphone">
+                <span class="center_home_btn"></span>
+                <span class="center_display"></span>
+              </div>
+              <!-- /.center_phone -->
+              <div class="right_phone">
+                <img src="assets/img/right_phone.png" alt="Iphone">
+              </div>
+              <!-- /.right_phone -->
+            </div>
+            <!-- /.second_slide-->
+          </div>
+          <!-- /.sliders -->
+
+          <button type="button" class="next_arrow"></button>
+          <!-- /.next_arrow -->
         </div>
-        <!-- /.vertical_phone -->
-        <div class="horizontal_phone">
-          <img src="assets/img/iphone_horizontal.png" alt="iPhone">
-        </div>
-        <!-- /.horizontal_phone -->
-        <button type="button" class="next_arrow"></button>
-        <!-- /.next_arrow -->
+        <!-- /.slider_content -->
       </section>
       <!-- /.slider -->
 
       <section class="services">
+        <a href="#" class="anchor_link" name="services"></a>
         <div class="services_section">
           <div class="services_statement">
             <h2>Our Services</h2>
@@ -138,6 +174,7 @@
       <!-- /.services -->
 
       <section class="portfolio">
+        <a href="#" class="anchor_link" name="portfolio"></a>
         <div class="portfolio_content">
           <h2 class="portfolio_title">Portfolio</h2>
           <p class="portfolio_subtitle">
@@ -153,53 +190,49 @@
         </div>
         <!-- /.portfolio_statement -->
         <div class="portfolio_items">
-          <div class="portfolio_block">
-            <div class="img_position">
-              <img class="portfolio_img project_boat" src="assets/img/portfolio/project_boat.jpg" alt="Boat">
-            </div>
-            <div class="img_position">
-              <img class="portfolio_img project_fly" src="assets/img/portfolio/project_fly.jpg" alt="Fly">
-            </div>
-            <div class="img_position">
-              <img class="portfolio_img project_space" src="assets/img/portfolio/project_space.jpg" alt="Space">
-            </div>
-            <div class="img_position">
-              <img class="portfolio_img project_robo" src="assets/img/portfolio/project_robo.jpg" alt="Robot">
-            </div>
+          <div class="img_position">
+            <img class="portfolio_img project_boat" src="assets/img/portfolio/project_boat.jpg" alt="Boat">
           </div>
-          <div class="portfolio_block">
-            <div class="img_position">
-              <img class="portfolio_img project_abstraction" src="assets/img/portfolio/project_abstraction.jpg" alt="Abstraction">
-            </div>
-            <div class="img_position">
-              <img class="portfolio_img project_it" src="assets/img/portfolio/project_it.jpg" alt="IT">
-            </div>
-            <div class="img_position">
-              <img class="portfolio_img project_art" src="assets/img/portfolio/project_art.jpg" alt="Art">
-            </div>
-            <div class="img_position">
-              <img class="portfolio_img project_hen" src="assets/img/portfolio/project_hen.jpg" alt="Hen">
-            </div>
+          <div class="img_position">
+            <img class="portfolio_img project_fly" src="assets/img/portfolio/project_fly.jpg" alt="Fly">
           </div>
-          <div class="portfolio_block">
-            <div class="img_position">
-              <img class="portfolio_img project_hulk" src="assets/img/portfolio/project_hulk.jpg" alt="Hulk">
-            </div>
-            <div class="img_position">
-              <img class="portfolio_img project_radio" src="assets/img/portfolio/project_radio.jpg" alt="Radio">
-            </div>
-            <div class="img_position">
-              <img class="portfolio_img project_horror" src="assets/img/portfolio/project_horror.jpg" alt="Horror">
-            </div>
-            <div class="img_position">
-              <img class="portfolio_img project_blood" src="assets/img/portfolio/project_blood.jpg" alt="Blood">
-            </div>
+          <div class="img_position">
+            <img class="portfolio_img project_space" src="assets/img/portfolio/project_space.jpg" alt="Space">
+          </div>
+          <div class="img_position">
+            <img class="portfolio_img project_robo" src="assets/img/portfolio/project_robo.jpg" alt="Robot">
+          </div>
+          <div class="img_position">
+            <img class="portfolio_img project_abstraction" src="assets/img/portfolio/project_abstraction.jpg"
+              alt="Abstraction">
+          </div>
+          <div class="img_position">
+            <img class="portfolio_img project_it" src="assets/img/portfolio/project_it.jpg" alt="IT">
+          </div>
+          <div class="img_position">
+            <img class="portfolio_img project_art" src="assets/img/portfolio/project_art.jpg" alt="Art">
+          </div>
+          <div class="img_position">
+            <img class="portfolio_img project_hen" src="assets/img/portfolio/project_hen.jpg" alt="Hen">
+          </div>
+          <div class="img_position">
+            <img class="portfolio_img project_hulk" src="assets/img/portfolio/project_hulk.jpg" alt="Hulk">
+          </div>
+          <div class="img_position">
+            <img class="portfolio_img project_radio" src="assets/img/portfolio/project_radio.jpg" alt="Radio">
+          </div>
+          <div class="img_position">
+            <img class="portfolio_img project_horror" src="assets/img/portfolio/project_horror.jpg" alt="Horror">
+          </div>
+          <div class="img_position">
+            <img class="portfolio_img project_blood" src="assets/img/portfolio/project_blood.jpg" alt="Blood">
           </div>
         </div>
       </section>
       <!-- /.portfolio -->
 
       <section class="about_us">
+        <a href="#" class="anchor_link" name="about"></a>
         <div class="about_us_content">
           <h2 class="about_us_title">About Us</h2>
           <p class="about_us_subtitle">
@@ -287,6 +320,7 @@
       <!-- /.about_us -->
 
       <section class="get_quote">
+        <a href="#" class="anchor_link" name="contact"></a>
         <div class="get_quote_content">
           <h2 class="get_quote_title">Get a Quote</h2>
           <p class="get_quote_subtitle">
@@ -298,14 +332,19 @@
         </div>
         <!-- /.get_quote_content -->
         <div class="request">
-          <form class="request_form" action="#" method="get">
+          <form class="request_form" action="#" method="POST">
             <input class="request_field" type="text" placeholder="Name (Required)" autocomplete="off" required>
             <input class="request_field" type="email" placeholder="Email (Required)" required autocomplete="off">
-            <input class="request_field" type="text" placeholder="Subject" required autocomplete="off">
-            <textarea class="request_field" rows="13" name="description"
+            <input class="request_field subject" type="text" placeholder="Subject" autocomplete="off">
+            <textarea class="request_field description" rows="13" name="description"
               placeholder="Describe your project in detail..." maxlength="500"></textarea>
             <input class="send_request" type="submit" value="Submit">
           </form>
+          <!-- /. request_form -->
+
+          <div class="modal_window"></div>
+          <!-- /.modal window-->
+
           <div class="contact_content">
             <h3 class="contact_title">Contact Information</h3>
             <p class="contact_subtitle">
@@ -331,6 +370,7 @@
           </div>
           <!-- /.contact_content -->
         </div>
+        <!-- /.request -->
       </section>
       <!-- /.get_quote -->
     </main>
@@ -369,6 +409,7 @@
 
   </div>
   <!-- /.container -->
+  <script src="script.js"></script>
 </body>
 
 </html>
