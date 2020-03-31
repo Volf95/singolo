@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-  const navbar = document.querySelector('.navbar');
-  const navLink = document.querySelectorAll('.menu_item a');
+  const navLink = document.querySelectorAll('.menu_link');
   const allSections = document.querySelectorAll('section');
-  const header = document.querySelector('.sg_header');
-  const anchorLinks = document.querySelectorAll('.anchor_link');
-
+  const burgerBtn = document.querySelector('.burger_btn');
+  const navbarContent = document.querySelector('.navbar_content');
+  const navbarBlock = document.querySelector('.navbar');
+  
   const verticalPhone = document.querySelector('.vertical_phone');
   const verticalPhoneDisplay = document.querySelector('.vertical_display');
   const horizontalPhone = document.querySelector('.horizontal_phone');
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   const portfolioTabs = document.querySelector('.button_group');
   const portflolioItems = document.querySelector('.portfolio_items');
-  const allPortfolios = document.querySelectorAll('.img_position');
+  const allPortfolios = document.querySelectorAll('.portfolio_img');
 
   const requestForm = document.querySelector('.request_form');
   const sendRequestBtn = document.querySelector('.send_request');
@@ -34,11 +34,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
         });
       }
     });
-    if (scrollPosition > 550) {
-      header.classList.add('sticky');
-    } else {
-      header.classList.remove('sticky');
-    }
   }
 
   const scrollWindow = () => {
@@ -46,6 +41,49 @@ document.addEventListener('DOMContentLoaded', function (event) {
   }
   scrollWindow();
 /* === / NAVBAR ACTIVE === */
+
+
+/* === PHONE MENU NAVBAR === */
+  const navbarDispOpen = () => {
+    let logotype = document.querySelector('.logotype');
+    if (navbarContent.classList.contains('phone_navbar_opened')) {
+      navbarBlock.classList.remove('hidden_menu');
+      logotype.classList.add('navbar_logotype');
+    } else {
+      logotype.classList.remove('navbar_logotype');
+      navbarBlock.classList.add('hidden_menu');
+    }
+  }
+
+  const linkToPhoneSectionMenu = () => {
+    navbarContent.addEventListener('click', (e) => {
+      if(e.target.classList.contains('menu_link')){
+        burgerBtn.classList.remove('rotated_burger_btn');
+        navbarContent.classList.remove('phone_navbar_opened');
+        navbarBlock.classList.add('hidden_menu');
+      }
+    });
+  }
+  
+  const phoneMenuClickHandler = (clickedMenuBtn) => {
+    if (clickedMenuBtn.classList.contains('burger_btn') || clickedMenuBtn.classList.contains('menu_btn_line')) {
+      burgerBtn.classList.toggle('rotated_burger_btn');
+      navbarContent.classList.toggle('phone_navbar_opened');
+    }
+    navbarDispOpen();
+    linkToPhoneSectionMenu();
+  }
+
+  const phoneMenuActive = () => {
+    burgerBtn.addEventListener('click', (e) => {
+      let clickedMenuBtn = e.target;
+      phoneMenuClickHandler(clickedMenuBtn);
+      e.preventDefault();
+    });
+  }
+
+  phoneMenuActive();
+/* === / PHONE MENU NAVBAR === */
 
 
 /* === ON and OFF PHONE DISPLAYS === */
@@ -96,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 /* === BORDERED PORTFOLIO IMAGE === */
   const removeItemBorder = () => {
-    let selectedItem = document.querySelectorAll('.portfolio_items .img_position');
+    let selectedItem = document.querySelectorAll('.portfolio_items .portfolio_img');
     selectedItem.forEach(item => {
       item.classList.remove('bordered');
     });
@@ -109,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   const activatePortfolioItem = () => {
     portflolioItems.addEventListener('click', (e) => {
       let clickedItem = e.target;
-      if (clickedItem.classList.contains('portfolio_img')) {
+      if (clickedItem.classList.contains('project_image')) {
         removeItemBorder();
         addItemBorder(clickedItem);
       }
